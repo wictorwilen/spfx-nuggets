@@ -1,0 +1,18 @@
+{
+  "$schema": "../../../node_modules/@microsoft/sp-module-interfaces/lib/manifestSchemas/jsonSchemas/clientSideComponentManifestSchema.json",
+
+  "id": "96afebf4-a30c-4af2-86a3-a14b0c44acb3",
+  "componentType": "WebPart",
+  "version": "0.0.1",
+  "manifestVersion": 2,
+
+  "preconfiguredEntries": [{
+    "groupId": "96afebf4-a30c-4af2-86a3-a14b0c44acb3",
+    "group": { "default": "Under Development" },
+    "title": { "default": "SPFxNuggets" },
+    "description": { "default": "SPFxNuggets demo web part" },
+    "officeFabricIconFontName": "Page",
+    "properties": {
+    }
+  }]
+}

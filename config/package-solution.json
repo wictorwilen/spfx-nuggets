@@ -1,0 +1,10 @@
+{
+  "solution": {
+    "name": "spfx-nuggets-client-side-solution",
+    "id": "10f80d5e-8709-45aa-8c37-60fa26a76442",
+    "version": "1.0.0.0"
+  },
+  "paths": {
+    "zippedPackage": "solution/spfx-nuggets.spapp"
+  }
+}
