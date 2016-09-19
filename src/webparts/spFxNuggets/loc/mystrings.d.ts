@@ -3,6 +3,7 @@ declare interface ISpFxNuggetsStrings {
   BasicGroupName: string;
   DescriptionFieldLabel: string;
   Loading: string;
+  Fail: string;
 }
 
 declare module 'spFxNuggetsStrings' {

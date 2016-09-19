@@ -13,6 +13,7 @@
     "description": { "default": "SPFxNuggets demo web part" },
     "officeFabricIconFontName": "Page",
     "properties": {
+      "fail": false
     }
   }]
 }

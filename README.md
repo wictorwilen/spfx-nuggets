@@ -2,12 +2,7 @@
 
 This is a demo project showing some nuggets of the SharePoint Framework
 
-### Building the code
+### Related blog posts
 
-```bash
-git clone the repo
-npm i
-npm i -g gulp
-gulp
-```
-
+* [SharePoint Framework Nuggets - the loading indicator](http://www.wictorwilen.se/sharepoint-framework-nuggets-the-loading-indicator)
+* [SharePoint Framework Nuggets - render error messages](http://www.wictorwilen.se/sharepoint-framework-nuggets-render-error-messages)

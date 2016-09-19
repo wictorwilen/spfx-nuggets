@@ -1,7 +1,8 @@
 import {
   BaseClientSideWebPart,
   IPropertyPaneSettings,
-  IWebPartContext
+  IWebPartContext,
+  PropertyPaneToggle
 } from '@microsoft/sp-client-preview';
 
 import {
@@ -35,11 +36,19 @@ export default class SpFxNuggetsWebPart extends BaseClientSideWebPart<ISpFxNugge
   }
 
   public render(): void {
+    this.context.statusRenderer.clearError(this.domElement);
     this.context.statusRenderer.displayLoadingIndicator(this.domElement, strings.Loading);
 
     this._webInfoProvider.getWebInfo().then((webInfo: IWebInfo) => {
+      if(this.properties.fail) {
+        throw new Error('Mayday');
+      }
       this.context.statusRenderer.clearLoadingIndicator(this.domElement);
       this.context.domElement.innerHTML = `<h1>${webInfo.title}</h1>`;
+
+    }).catch( (err) => {
+      this.context.statusRenderer.clearLoadingIndicator(this.domElement);
+      this.context.statusRenderer.renderError(this.domElement, err);
     });
   }
 
@@ -54,6 +63,9 @@ export default class SpFxNuggetsWebPart extends BaseClientSideWebPart<ISpFxNugge
             {
               groupName: strings.BasicGroupName,
               groupFields: [
+                PropertyPaneToggle('fail', {
+                  label: strings.Fail
+                }),
               ]
             }
           ]
