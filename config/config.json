@@ -4,6 +4,11 @@
       "entry": "./lib/webparts/spFxNuggets/SpFxNuggetsWebPart.js",
       "manifest": "./src/webparts/spFxNuggets/SpFxNuggetsWebPart.manifest.json",
       "outputPath": "./dist/sp-fx-nuggets.bundle.js"
+    },
+    {
+      "entry": "./lib/webparts/guidNugget/GuidNuggetWebPart.js",
+      "manifest": "./src/webparts/guidNugget/GuidNuggetWebPart.manifest.json",
+      "outputPath": "./dist/guid-nugget.bundle.js"
     }
   ],
   "externals": {
@@ -16,6 +21,7 @@
     "react-dom/server": "node_modules/react-dom/dist/react-dom-server.min.js"
   },
   "localizedResources": {
-    "spFxNuggetsStrings": "webparts/spFxNuggets/loc/{locale}.js"
+    "spFxNuggetsStrings": "webparts/spFxNuggets/loc/{locale}.js",
+    "guidNuggetStrings": "webparts/guidNugget/loc/{locale}.js"
   }
 }
